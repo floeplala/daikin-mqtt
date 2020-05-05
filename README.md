@@ -24,6 +24,7 @@ When running, the script will connect to the given mqtt-broker. Next, it will qu
 possible future enhancements:
 support for multiple airconditioners (although i have only one myself) 
 support for fan speed and fan direction (i have no need for setting this through mqtt)
+support for retained messages
 
 # mode
 
