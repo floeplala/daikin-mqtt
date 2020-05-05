@@ -27,11 +27,6 @@ The following mqtt-topics are recognized and sent to the wifi-module:
 <devicename>/set/stemp      to set the desired temperature
 ```
 
-### Wishlist:
-support for multiple airconditioners (although i have only one myself) 
-support for fan speed and fan direction (i have no need for setting this through mqtt)
-support for retained messages
-
 ### Mode
 To set the mode of the airconditioner, just pick one of these values:
 ```
@@ -42,7 +37,12 @@ To set the mode of the airconditioner, just pick one of these values:
 6 = Fan
 ```
 Example: `mosquitto_pub -t "daikin/set/mode" -m "0"`
-Reading of the mode is a litte bit different, but the script will convert the given value to a convenient text, have a look inside the script if you like to know more details about this, or if you would like to change te language.
+Reading of the mode is a litte bit different, but the script will convert the given value to a convenient text, have a look inside the script if you like to know more details about this, or if you would like to change the language.
 
 ### Install as a Service
+
+### Wishlist:
+support for multiple airconditioners (although i have only one myself) 
+support for fan speed and fan direction (i have no need for setting this through mqtt)
+support for retained messages
 
