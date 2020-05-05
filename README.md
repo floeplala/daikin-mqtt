@@ -10,9 +10,9 @@ The following information is collected from the wifi-module and sent over mqtt:
 ```
 <devicename>/status/otemp           outside temperature
 <devicename>/status/htemp           inside temperature (htemp probably means home-temperature)
-<devicename>/status/cmpfreq         compressorfrequency
+<devicename>/status/cmpfreq         compressor frequency (an indication of the workload)
 <devicename>/status/stemp           set temperature (Sollwert)
-<devicename>/status/powtext         power (given as text instead of boolean): On of Off
+<devicename>/status/powtext         power (given as text instead of boolean): On, Off
 <devicename>/status/modetext        mode (given as text instead of integer): Auto, Cool, Heat, Dry, Fan
 <devicename>/graph/cool-cmpfreq     used to draw a graph in Node-RED to show the use of the airconditioner
 <devicename>/graph/heat-cmpfreq     used to draw a graph in Node-RED to show the use of the airconditioner
@@ -40,6 +40,7 @@ Example: mosquitto_pub -t "daikin/set/mode" -m "0"
 Reading of the mode is a litte bit different, but the script will convert the given value to a convenient text, have a look inside the script if you like to know more details about this, or if you would like to change the language.
 
 ### Install as a Service
+TODO: add manual
 
 ### Wishlist:
 - Support for multiple airconditioners (although I have only one myself) 
