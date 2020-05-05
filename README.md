@@ -23,7 +23,7 @@ The following mqtt-topics are recognized and sent to the wifi-module:
 ```
 <devicename>/set/getinfo    when sent, the script will directly collect and send data, instead of waiting for the next cycle
 <devicename>/set/pow        to switch it on and off
-<devicename>/set/mode       to set the mode: 0-7 for Auto, Cool, Heat, Dry & Fan
+<devicename>/set/mode       to set the mode: 0-7 for Auto, Cool, Heat, Dry & Fan (see below for details)
 <devicename>/set/stemp      to set the desired temperature
 ```
 
@@ -32,8 +32,7 @@ support for multiple airconditioners (although i have only one myself)
 support for fan speed and fan direction (i have no need for setting this through mqtt)
 support for retained messages
 
-### mode
-
+### Mode
 To set the mode of the airconditioner, just pick one of these values:
 ```
 0 = Auto
@@ -42,9 +41,8 @@ To set the mode of the airconditioner, just pick one of these values:
 4 = Heat
 6 = Fan
 ```
-example: `mosquitto_pub -t "daikin/set/mode" -m "0"`
-
+Example: `mosquitto_pub -t "daikin/set/mode" -m "0"`
 Reading of the mode is a litte bit different, but the script will convert the given value to a convenient text, have a look inside the script if you like to know more details about this, or if you would like to change te language.
 
-### install as a service
+### Install as a Service
 
