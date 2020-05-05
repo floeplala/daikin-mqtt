@@ -14,8 +14,8 @@ The following information is collected from the wifi-module and sent over mqtt:
 <devicename>/status/stemp           set temperature (Sollwert)
 <devicename>/status/powtext         power (given as text instead of boolean): On of Off
 <devicename>/status/modetext        mode (given as text instead of integer): Auto, Cool, Heat, Dry, Fan
-<devicename>/graph/cool-cmpfreq		  used to draw a graph in Node-RED to show the use of the airconditioner
-<devicename>/graph/heat-cmpfreq		  used to draw a graph in Node-RED to show the use of the airconditioner
+<devicename>/graph/cool-cmpfreq     used to draw a graph in Node-RED to show the use of the airconditioner
+<devicename>/graph/heat-cmpfreq     used to draw a graph in Node-RED to show the use of the airconditioner
 ```
 
 ### MQTT --> Daikin
