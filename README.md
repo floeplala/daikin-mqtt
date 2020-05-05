@@ -31,7 +31,7 @@ The following mqtt-topics are recognized and sent to the wifi-module:
 To set the mode of the airconditioner, just pick one of these values:
 ```
 0 = Auto
-2 = Dry, 
+2 = Dry
 3 = Cool
 4 = Heat
 6 = Fan
@@ -42,7 +42,7 @@ Reading of the mode is a litte bit different, but the script will convert the gi
 ### Install as a Service
 
 ### Wishlist:
-support for multiple airconditioners (although i have only one myself) 
-support for fan speed and fan direction (i have no need for setting this through mqtt)
-support for retained messages
+- support for multiple airconditioners (although i have only one myself) 
+- support for fan speed and fan direction (i have no need for setting this through mqtt)
+- support for retained messages
 
