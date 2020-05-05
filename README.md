@@ -3,7 +3,7 @@ Python script that handles the communication between MQTT and a Daikin aircondit
 
 I recommend to run this script as a service, for instance on a Raspberry Pi, see below for instructions.
 
-When running, the script will connect to the given mqtt-broker. Next, it will query the wifi-module of the Daikin airconditioner to collect data. The collected data will subsequently be sent as mqtt-messages. It will automatically reconnect en resubscribe if necessary.
+When running, the script will connect to the given mqtt-broker. Next, it will query the wifi-module of the Daikin airconditioner to collect data. The collected data will subsequently be sent as mqtt-messages. It will automatically reconnect and resubscribe if necessary.
 
 ### Daikin --> MQTT
 The following information is collected from the wifi-module and sent over mqtt:
