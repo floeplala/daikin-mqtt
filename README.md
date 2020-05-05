@@ -40,7 +40,8 @@ Example: mosquitto_pub -t "daikin/set/mode" -m "0" to switch to auto-mode
 When the airconditioner is in Auto-mode, it will return a 0 when it is currently cooling, and a 7 when it is currently heating. I don't know the purpose of mode 1 and 5. If you do, please let me know.
 
 ### Install as a Service
-TODO: add manual
+The best way I found to run a python-script as a service is explained here:
+https://timleland.com/how-to-run-a-linux-program-on-startup/
 
 ### Wishlist:
 - Support for multiple airconditioners (although I have only one myself) 
