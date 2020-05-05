@@ -1,4 +1,4 @@
-## daikin-mqtt
+## Daikin-MQTT interface
 Python script that handles the communication between MQTT and a Daikin airconditioner
 
 I recommend to run this script as a service, for instance on a Raspberry Pi, see below for instructions.
