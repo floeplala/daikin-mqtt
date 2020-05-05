@@ -37,7 +37,7 @@ To set the mode of the airconditioner, just pick one of these values:
 6 = Fan
 Example: mosquitto_pub -t "daikin/set/mode" -m "0"
 ```
-Reading of the mode is a litte bit different, but the script will convert the given value to a convenient text, have a look inside the script if you like to know more details about this, or if you would like to change the language.
+When the airconditioner is in Auto-mode, it will return a 0 when it is currently cooling, and a 7 when it is currently heating. I don't know the purpose of mode 1 and 5. If you do, please let me know.
 
 ### Install as a Service
 TODO: add manual
@@ -46,4 +46,5 @@ TODO: add manual
 - Support for multiple airconditioners (although I have only one myself) 
 - Support for fan speed and fan direction (I have no need for setting this through mqtt)
 - Support for retained messages
+- More knowledge of the modes: the purpose of mode 1 and 5?
 
