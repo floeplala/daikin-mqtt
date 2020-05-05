@@ -35,9 +35,8 @@ To set the mode of the airconditioner, just pick one of these values:
 3 = Cool
 4 = Heat
 6 = Fan
-```
 Example: `mosquitto_pub -t "daikin/set/mode" -m "0"`
-
+```
 Reading of the mode is a litte bit different, but the script will convert the given value to a convenient text, have a look inside the script if you like to know more details about this, or if you would like to change the language.
 
 ### Install as a Service
