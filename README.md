@@ -32,7 +32,7 @@ support for retained messages
 
 ### mode
 
-To set te mode of the airconditioner, just pick one of these numbers:
+To set the mode of the airconditioner, just pick one of these values:
 ```
 0 = Auto
 2 = Dry, 
